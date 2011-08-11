@@ -1,0 +1,13 @@
+The goal of this PHP function is get all the data from a HTML form and generate a MySQL INSERT query statement.
+To test this function, you need two files:
+1. The page with the HTML form, form.php
+2. The PHP file with the function, function.php
+
+The function expects some parameters:
+1. Names of fields to be ignored from the form
+2. Alternate names of form fields when generating the database column names
+3. Names of database fields which contain numerical data
+4. Native PHP functions to apply to the form data before adding it to the query
+5. A separator for handling multi select form data
+
+This function makes it possible to have a form which has different field names from the database table columns.
